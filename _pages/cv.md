@@ -21,6 +21,12 @@ Research Interests
 * Peer Review Generation
 * Automated Evaluation
 
+Projects
+======
+* ReviewLLM - Retrieval-augmented pipeline for rubric-aligned peer reviews.
+* Agentic Review Assistant - Multi-agent workflow for rebuttal preparation and evidence gathering.
+* Evaluation Dashboard - Interactive analytics for calibration, coverage, and reviewer agreement.
+
 Skills
 ======
 * Programming Languages

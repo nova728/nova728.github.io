@@ -4,10 +4,13 @@
 
 .masthead {
   position: fixed;
-  background: var(--global-bg-color);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   height: fit-content;
   top: 0;
   width: 100%;
+  box-shadow: 0 4px 18px -6px rgba(15, 23, 42, 0.08);
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -20,14 +23,14 @@
     position: absolute;
     bottom: 0;
     height: 1px;
-    background: var(--global-border-color);
+    background: linear-gradient(90deg, transparent, rgba(79, 70, 229, 0.12) 50%, transparent);
     width: 100%;
   }
 
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.5em 1em;
+    padding: 0.65em 1.5em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -40,7 +43,18 @@
 
     a {
       text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s ease;
     }
+  }
+}
+
+html[data-theme="dark"] .masthead {
+  background: rgba(15, 23, 42, 0.85);
+  box-shadow: 0 4px 18px -6px rgba(0, 0, 0, 0.25);
+
+  &::after {
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.25) 50%, transparent);
   }
 }
 
@@ -55,7 +69,7 @@
 }
 
 .masthead__menu-item {
-  background-color: var(--global-bg-color);
+  background-color: transparent;
   display: block;
   list-style-type: none;
   white-space: nowrap;

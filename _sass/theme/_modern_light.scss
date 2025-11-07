@@ -1,0 +1,57 @@
+/* ==========================================================================
+   MODERN LIGHT THEME
+   ========================================================================== */
+
+$primary-color              : #4f46e5;
+$primary-color-dark         : #3730a3;
+$secondary-color            : #22d3ee;
+$accent-color               : #f9a8d4;
+$neutral-color              : #0f172a;
+$muted-color                : #64748b;
+$surface-color              : #ffffff;
+$surface-alt-color          : #f5f7ff;
+$border-color               : rgba(15, 23, 42, 0.08);
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #2f7f93;
+$notice-color               : #7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+:root {
+    --global-base-color                 : #{$muted-color};
+    --global-bg-color                   : #{$surface-alt-color};
+    --global-footer-bg-color            : #e9ecff;
+    --global-border-color               : #{$border-color};
+    --global-dark-border-color          : rgba(15, 23, 42, 0.12);
+    --global-code-background-color      : #0f172a10;
+    --global-code-text-color            : #0f172a;
+    --global-fig-caption-color          : rgba(15, 23, 42, 0.72);
+    --global-link-color                 : #{$primary-color};
+    --global-link-color-hover           : #{$primary-color-dark};
+    --global-link-color-visited         : mix(#fff, #{$primary-color}, 30%);
+    --global-masthead-link-color        : #{$neutral-color};
+    --global-masthead-link-color-hover  : #{$primary-color};
+    --global-text-color                 : #{$neutral-color};
+    --global-text-color-light           : rgba(15, 23, 42, 0.64);
+    --global-thead-color                : rgba(79, 70, 229, 0.08);
+
+    --accent-gradient                   : linear-gradient(135deg, #{$primary-color}, #{$secondary-color});
+    --surface-card-bg                   : #{$surface-color};
+    --surface-card-shadow               : 0 16px 30px -18px rgba(79, 70, 229, 0.45);
+    --pill-background                   : rgba(34, 211, 238, 0.12);
+    --pill-color                        : #1d4ed8;
+    --tag-background                    : rgba(249, 168, 212, 0.16);
+    --tag-color                         : #be185d;
+}

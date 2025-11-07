@@ -4,9 +4,9 @@
 
 %tab-focus {
   /* Default*/
-  outline: thin dotted $warning-color;
+  outline: thin dotted #f89406;
   /* Webkit*/
-  outline: 5px auto $warning-color;
+  outline: 5px auto #f89406;
   outline-offset: -2px;
 }
 
