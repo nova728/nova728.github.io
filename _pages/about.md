@@ -103,9 +103,32 @@ redirect_from:
 
 <div class="project-grid">
   <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+    <h3>ReviewLLM</h3>
+    <p>Designed a large language model pipeline that drafts high-quality academic peer reviews, combining retrieval-augmented prompts with rubric-aware critique generation.</p>
+    <div class="project-card__meta">
+      <span>NLP</span>
+      <span>LLM</span>
+      <span>RAG</span>
+    </div>
+  </div>
+  <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-book" aria-hidden="true"></i></div>
+    <h3>心迹 · Diary</h3>
+    <p>Privacy-focused personal diary web app with rich-text editing, mood tracking, tag classification, calendar check-in, and writing statistics. Fully Dockerized with React + Node.js + PostgreSQL.</p>
+    <div class="project-card__meta">
+      <span>React</span>
+      <span>Node.js</span>
+      <span>PostgreSQL</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/nova728/diary" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+  <div class="project-card">
     <div class="project-card__icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
     <h3>Healthcare Platform</h3>
-    <p>Full-stack healthcare management system with mobile app, web frontend, and backend services. Features appointment scheduling, medical records, and patient-doctor communication.</p>
+    <p>Full-stack healthcare management system with mobile app, web frontend, and backend services. Features appointment scheduling, health data tracking, AI consultation, and real-time notifications.</p>
     <div class="project-card__meta">
       <span>Flutter</span>
       <span>Vue.js</span>
@@ -115,16 +138,6 @@ redirect_from:
       <a href="https://github.com/nova728/Healthcare-APP" target="_blank"><i class="fab fa-github"></i> Mobile App</a>
       <a href="https://github.com/nova728/health-platform-front" target="_blank"><i class="fab fa-github"></i> Frontend</a>
       <a href="https://github.com/nova728/health-platform-backend" target="_blank"><i class="fab fa-github"></i> Backend</a>
-    </div>
-  </div>
-  <div class="project-card">
-    <div class="project-card__icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
-    <h3>ReviewLLM</h3>
-    <p>Designed a large language model pipeline that drafts high-quality academic peer reviews, combining retrieval-augmented prompts with rubric-aware critique generation.</p>
-    <div class="project-card__meta">
-      <span>NLP</span>
-      <span>LLM</span>
-      <span>Evaluation</span>
     </div>
   </div>
 </div>

@@ -8,20 +8,65 @@ author_profile: true
 <h1 class="fancy-title">Projects</h1>
 
 <div class="hero-block">
-  <p class="hero-block__text">A curated selection of research and engineering projects where I explore reliable evaluation, agentic workflows, and human-AI collaboration.</p>
+  <p class="hero-block__text">A curated selection of research and engineering projects spanning AI, full-stack development, and mobile applications.</p>
 </div>
 
-## Current Focus
+## AI & Research
 
 <div class="project-grid">
   <div class="project-card">
-    <div class="project-card__icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
-    <h3>Healthcare Platform</h3>
-    <p>Full-stack healthcare management system with mobile app, web frontend, and backend services. Features appointment scheduling, medical records, and patient-doctor communication.</p>
+    <div class="project-card__icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+    <h3>ReviewLLM</h3>
+    <p>End-to-end pipeline for automatic academic peer review generation. Integrates retrieval-augmented prompts, reviewer persona conditioning, and rubric-aligned scoring to boost review helpfulness.</p>
     <div class="project-card__meta">
-      <span>Kotlin</span>
+      <span>Python</span>
+      <span>LLM</span>
+      <span>NLP</span>
+      <span>RAG</span>
+    </div>
+  </div>
+  <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-video" aria-hidden="true"></i></div>
+    <h3>DaGAN Talking Face Reproduction</h3>
+    <p>Reproduced the CVPR 2022 paper <em>Depth-Aware GAN for Talking Head Video Generation</em>. Trained on 4× RTX 4090 GPUs and evaluated with PSNR, SSIM, FID, LSE-C and LSE-D metrics. Fully Dockerized.</p>
+    <div class="project-card__meta">
+      <span>Python</span>
+      <span>PyTorch</span>
+      <span>GAN</span>
+      <span>Docker</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/nova728/talkingface-kit" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</div>
+
+## Full-Stack Applications
+
+<div class="project-grid">
+  <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-book" aria-hidden="true"></i></div>
+    <h3>心迹 · Diary</h3>
+    <p>A privacy-focused personal diary web app with rich-text editing, mood tracking, tag classification, calendar check-in, and writing statistics. Supports Docker deployment and data export.</p>
+    <div class="project-card__meta">
+      <span>React</span>
+      <span>Node.js</span>
+      <span>PostgreSQL</span>
+      <span>Docker</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/nova728/diary" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
+    <h3>Healthcare Platform <span style="font-size:0.75em;opacity:0.7">(v2)</span></h3>
+    <p>Upgraded full-stack health management system. Features appointment scheduling, health data tracking, medication reminders, community forum, and real-time WebSocket notifications. AI consultation via ERNIE Bot API.</p>
+    <div class="project-card__meta">
+      <span>Flutter</span>
       <span>Vue.js</span>
       <span>Spring Boot</span>
+      <span>Redis</span>
     </div>
     <div class="project-card__links">
       <a href="https://github.com/nova728/Healthcare-APP" target="_blank"><i class="fab fa-github"></i> Mobile App</a>
@@ -30,41 +75,43 @@ author_profile: true
     </div>
   </div>
   <div class="project-card">
-    <div class="project-card__icon"><i class="fas fa-star" aria-hidden="true"></i></div>
-    <h3>ReviewLLM</h3>
-    <p>End-to-end pipeline for automatic peer review generation. Integrates retrieval-augmented prompts, reviewer persona conditioning, and rubric-aligned scoring to boost review helpfulness.</p>
+    <div class="project-card__icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
+    <h3>Healthcare Platform <span style="font-size:0.75em;opacity:0.7">(v1)</span></h3>
+    <p>First-generation health management platform built with Spring Boot and Vue.js. Provides health records, exercise tracking, diet management, drug lookup (OpenFDA), and food nutrition data (FatSecret API).</p>
     <div class="project-card__meta">
-      <span>NLP</span>
-      <span>LLM</span>
-      <span>Evaluation</span>
+      <span>Java</span>
+      <span>Vue.js</span>
+      <span>Spring Boot</span>
+      <span>MySQL</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/nova728/healthplatform" target="_blank"><i class="fab fa-github"></i> Backend</a>
+      <a href="https://github.com/nova728/healthplatform_front" target="_blank"><i class="fab fa-github"></i> Frontend</a>
     </div>
   </div>
 </div>
 
-## Selected Highlights
+## Mobile Applications
 
-<div class="info-grid">
-  <div class="info-card">
-    <div class="info-card__icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
-    <h3>Scientific Review Benchmarking</h3>
-    <ul>
-      <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Curated a multilingual dataset of expert peer reviews with fine-grained labels.</span></li>
-      <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Implemented scoring functions that measure tone, constructiveness, and actionability.</span></li>
-    </ul>
+<div class="project-grid">
+  <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+    <h3>高考志愿填报建议系统</h3>
+    <p>A Flutter mobile app that helps Chinese high school students select universities. Integrates college search, admission score history, AI-powered recommendation, and personalized score management.</p>
+    <div class="project-card__meta">
+      <span>Flutter</span>
+      <span>Dart</span>
+      <span>JWT</span>
+      <span>REST API</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/nova728/edu_flutter_app" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
   </div>
-  <div class="info-card">
-    <div class="info-card__icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
-    <h3>LLM Post-Training Recipes</h3>
-    <ul>
-      <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Experimented with preference optimization to align critique tone with reviewer personas.</span></li>
-      <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Built evaluation loops to compare direct preference optimization and SFT.</span></li>
-    </ul>
-  </div>
-
 </div>
 
 ## What I am Looking For
 
 <div class="callout">
-  <p><i class="fas fa-heart icon" aria-hidden="true"></i> I am eager to collaborate on projects that push LLM evaluation forward, especially around peer review, agent design. Feel free to reach out to explore ideas together.</p>
+  <p><i class="fas fa-heart icon" aria-hidden="true"></i> I am eager to collaborate on projects that push LLM evaluation forward, especially around peer review and agent design. Feel free to reach out to explore ideas together.</p>
 </div>
