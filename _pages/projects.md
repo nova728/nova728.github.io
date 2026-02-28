@@ -15,6 +15,21 @@ author_profile: true
 
 <div class="project-grid">
   <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+    <h3>ResearchRadar</h3>
+    <p>An ArXiv intelligence tool that goes beyond listing papers. Automatically tracks multi-week citation trends, clusters papers into topic maps, and answers research questions via local RAG. Supports Ollama, DeepSeek, and OpenAI. All data stored locally.</p>
+    <div class="project-card__meta">
+      <span>Python</span>
+      <span>TypeScript</span>
+      <span>FastAPI</span>
+      <span>RAG</span>
+      <span>React</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/nova728/research-radar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+  <div class="project-card">
     <div class="project-card__icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
     <h3>ReviewLLM</h3>
     <p>End-to-end pipeline for automatic academic peer review generation. Integrates retrieval-augmented prompts, reviewer persona conditioning, and rubric-aligned scoring to boost review helpfulness.</p>

@@ -103,6 +103,19 @@ redirect_from:
 
 <div class="project-grid">
   <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+    <h3>ResearchRadar</h3>
+    <p>ArXiv intelligence tool that tracks multi-week trends, clusters papers into topic maps, and answers research questions via local RAG. Supports Ollama, DeepSeek, and OpenAI — all data stored locally.</p>
+    <div class="project-card__meta">
+      <span>Python</span>
+      <span>RAG</span>
+      <span>TypeScript</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/nova728/research-radar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+  <div class="project-card">
     <div class="project-card__icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
     <h3>ReviewLLM</h3>
     <p>Designed a large language model pipeline that drafts high-quality academic peer reviews, combining retrieval-augmented prompts with rubric-aware critique generation.</p>
@@ -123,21 +136,6 @@ redirect_from:
     </div>
     <div class="project-card__links">
       <a href="https://github.com/nova728/diary" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    </div>
-  </div>
-  <div class="project-card">
-    <div class="project-card__icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
-    <h3>Healthcare Platform</h3>
-    <p>Full-stack healthcare management system with mobile app, web frontend, and backend services. Features appointment scheduling, health data tracking, AI consultation, and real-time notifications.</p>
-    <div class="project-card__meta">
-      <span>Flutter</span>
-      <span>Vue.js</span>
-      <span>Spring Boot</span>
-    </div>
-    <div class="project-card__links">
-      <a href="https://github.com/nova728/Healthcare-APP" target="_blank"><i class="fab fa-github"></i> Mobile App</a>
-      <a href="https://github.com/nova728/health-platform-front" target="_blank"><i class="fab fa-github"></i> Frontend</a>
-      <a href="https://github.com/nova728/health-platform-backend" target="_blank"><i class="fab fa-github"></i> Backend</a>
     </div>
   </div>
 </div>
