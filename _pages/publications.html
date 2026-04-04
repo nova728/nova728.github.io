@@ -9,5 +9,12 @@ author_profile: true
 
 {% include base_path %}
 
-<p>Coming soon.</p>
+{% assign publications = site.publications | sort: "date" | reverse %}
 
+{% if publications.size > 0 %}
+  {% for post in publications %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>Coming soon.</p>
+{% endif %}

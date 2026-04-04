@@ -161,4 +161,14 @@ redirect_from:
 
 ## Publications
 
-<p>3 papers currently under review. See <a href="https://scholar.google.com/citations?user=TfOL5ucAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://orcid.org/0009-0007-8384-7846" target="_blank">ORCID</a> for updates.</p>
+<div class="info-grid">
+  <div class="info-card">
+    <div class="info-card__header">
+      <div class="info-card__icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+      <h3>SIGIR 2026</h3>
+    </div>
+    <p><strong>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</strong></p>
+    <p>Accepted as a short paper at the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval.</p>
+    <p><a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank">View on OpenReview</a></p>
+  </div>
+</div>

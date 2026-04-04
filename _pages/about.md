@@ -11,6 +11,10 @@ redirect_from:
 
 <p class="about-intro">I build intelligent review and evaluation systems that combine large language models with thoughtful human-centered design. I am a senior undergraduate at Beijing Institute of Technology, focusing on Natural Language Processing and trustworthy AI tooling.</p>
 
+<div class="callout" style="margin-bottom:2rem;">
+  <p><i class="fas fa-award" aria-hidden="true"></i> Latest update: our paper <a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank"><strong>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</strong></a> was accepted to the SIGIR 2026 short paper track.</p>
+</div>
+
 ## Snapshot
 
 <div class="info-grid snapshot-grid">
