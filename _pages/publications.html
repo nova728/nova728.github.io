@@ -9,12 +9,19 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign publications = site.publications | sort: "date" | reverse %}
+<div class="info-grid">
+  <div class="info-card">
+    <div class="info-card__header">
+      <div class="info-card__icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+      <h3>SIGIR 2026 Short Paper</h3>
+    </div>
+    <p><strong>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</strong></p>
+    <p>Accepted to the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (Short Papers).</p>
+    <p><a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank">OpenReview</a> · <a href="/publication/g-cos-sigir-2026">Local publication page</a></p>
+  </div>
+</div>
 
-{% if publications.size > 0 %}
-  {% for post in publications %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% else %}
-  <p>Coming soon.</p>
-{% endif %}
+{% assign publications = site.publications | sort: "date" | reverse %}
+{% for post in publications %}
+  {% include archive-single.html %}
+{% endfor %}
