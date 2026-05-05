@@ -9,11 +9,7 @@ redirect_from:
 
 <h1 class="fancy-title">About Me</h1>
 
-<p class="about-intro">I build intelligent review and evaluation systems that combine large language models with thoughtful human-centered design. I am a senior undergraduate at Beijing Institute of Technology, focusing on Natural Language Processing and trustworthy AI tooling.</p>
-
-<div class="callout" style="margin-bottom:2rem;">
-  <p><i class="fas fa-award" aria-hidden="true"></i> Latest update: our paper <a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank"><strong>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</strong></a> was accepted to the SIGIR 2026 short paper track.</p>
-</div>
+<p class="about-intro">I am a senior undergraduate at Beijing Institute of Technology. My primary research interests are generative retrieval system evaluation and research evaluation for scientific peer review.</p>
 
 ## Snapshot
 
@@ -35,10 +31,10 @@ redirect_from:
       <h3>Research Focus</h3>
     </div>
     <ul>
+      <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Generative Retrieval System Evaluation</span></li>
+      <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Research Evaluation for Scientific Peer Review</span></li>
       <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Natural Language Processing</span></li>
       <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Large Language Models</span></li>
-      <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Peer Review Generation</span></li>
-      <li><i class="fas fa-check icon" aria-hidden="true"></i><span>Automated Evaluation</span></li>
     </ul>
   </div>
   <div class="info-card">
@@ -117,6 +113,20 @@ redirect_from:
     </div>
     <div class="project-card__links">
       <a href="https://github.com/nova728/research-radar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+    <h3>G-CoS</h3>
+    <p>Interpretable gain-cost framework for user satisfaction estimation in generative information retrieval, accepted as a SIGIR 2026 short paper.</p>
+    <div class="project-card__meta">
+      <span>IR</span>
+      <span>LLM</span>
+      <span>Evaluation</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/Academic-Hammer/G-CoS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
     </div>
   </div>
   <div class="project-card">

@@ -30,6 +30,21 @@ author_profile: true
     </div>
   </div>
   <div class="project-card">
+    <div class="project-card__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+    <h3>G-CoS</h3>
+    <p>Research code for <em>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</em>, accepted to the SIGIR 2026 short paper track.</p>
+    <div class="project-card__meta">
+      <span>Python</span>
+      <span>IR</span>
+      <span>LLM</span>
+      <span>Evaluation</span>
+    </div>
+    <div class="project-card__links">
+      <a href="https://github.com/Academic-Hammer/G-CoS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+    </div>
+  </div>
+  <div class="project-card">
     <div class="project-card__icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
     <h3>ReviewLLM</h3>
     <p>End-to-end pipeline for automatic academic peer review generation. Integrates retrieval-augmented prompts, reviewer persona conditioning, and rubric-aligned scoring to boost review helpfulness.</p>
