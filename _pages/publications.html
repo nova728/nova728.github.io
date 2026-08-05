@@ -5,23 +5,55 @@ permalink: /publications/
 author_profile: true
 ---
 
-<h1 class="fancy-title">Publications</h1>
-
 {% include base_path %}
 
-<div class="info-grid">
-  <div class="info-card">
-    <div class="info-card__header">
-      <div class="info-card__icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
-      <h3>SIGIR 2026 Short Paper</h3>
-    </div>
-    <p><strong>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</strong></p>
-    <p>Accepted to the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (Short Papers).</p>
-    <p><a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank">OpenReview</a> · <a href="https://github.com/Academic-Hammer/G-CoS" target="_blank">GitHub Repository</a> · <a href="/publication/g-cos-sigir-2026">Local publication page</a></p>
+<h1 class="fancy-title">Publications</h1>
+
+<div class="hero-block">
+  <p class="hero-block__text">
+    Peer-reviewed work on evaluation for generative information retrieval and scientific peer review.
+    A complete and always up-to-date record is also available on
+    <a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID</a> and
+    <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>.
+  </p>
+  <div class="hero-block__actions">
+    <a class="pub-link pub-link--primary" href="{{ site.author.orcid }}" target="_blank" rel="noopener"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID</a>
+    <a class="pub-link" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
   </div>
 </div>
 
 {% assign publications = site.publications | sort: "date" | reverse %}
-{% for post in publications %}
-  {% include archive-single.html %}
+
+{% for category in site.publication_category %}
+  {% assign cat_key = category[0] %}
+  {% assign cat_pubs = publications | where: "category", cat_key %}
+  {% if cat_pubs.size > 0 %}
+
+<h2 class="section-heading">{{ category[1].title }}</h2>
+
+<div class="pub-list">
+  {% for post in cat_pubs %}
+  <article class="pub-card">
+    <div class="pub-card__year">
+      <span>{{ post.date | date: "%Y" }}</span>
+      <span class="pub-card__month">{{ post.date | date: "%b" }}</span>
+    </div>
+    <div class="pub-card__body">
+      <h3 class="pub-card__title">
+        <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+      </h3>
+      {% if post.authors %}<p class="pub-card__authors">{{ post.authors }}</p>{% endif %}
+      <p class="pub-card__venue"><i class="fas fa-map-pin" aria-hidden="true"></i> {{ post.venue }}</p>
+      <p class="pub-card__excerpt">{{ post.excerpt }}</p>
+      <div class="pub-detail__links">
+        {% if post.doi %}<a class="pub-link pub-link--primary" href="https://doi.org/{{ post.doi }}" target="_blank" rel="noopener"><i class="fas fa-book-open" aria-hidden="true"></i> DOI</a>{% endif %}
+        {% if post.codeurl %}<a class="pub-link" href="{{ post.codeurl }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% endif %}
+        <a class="pub-link" href="{{ base_path }}{{ post.url }}"><i class="fas fa-quote-right" aria-hidden="true"></i> Details &amp; BibTeX</a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+
+  {% endif %}
 {% endfor %}

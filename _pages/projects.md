@@ -32,7 +32,7 @@ author_profile: true
   <div class="project-card">
     <div class="project-card__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
     <h3>G-CoS</h3>
-    <p>Research code for <em>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</em>, accepted to the SIGIR 2026 short paper track.</p>
+    <p>Research code for <em>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</em>, published as a short paper at SIGIR 2026 (pp. 4110–4115).</p>
     <div class="project-card__meta">
       <span>Python</span>
       <span>IR</span>
@@ -41,7 +41,8 @@ author_profile: true
     </div>
     <div class="project-card__links">
       <a href="https://github.com/Academic-Hammer/G-CoS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="https://doi.org/10.1145/3805712.3809934" target="_blank"><i class="fas fa-book-open"></i> Paper (ACM DL)</a>
+      <a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank"><i class="fas fa-file-alt"></i> OpenReview</a>
     </div>
   </div>
   <div class="project-card">

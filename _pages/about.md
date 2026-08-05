@@ -9,7 +9,77 @@ redirect_from:
 
 <h1 class="fancy-title">About Me</h1>
 
-<p class="about-intro">I am a senior undergraduate at Beijing Institute of Technology. My primary research interests are generative retrieval system evaluation and research evaluation for scientific peer review.</p>
+<div class="intro-panel">
+  <p class="about-intro">
+    I am an M.S. student in Computer Science &amp; Technology at
+    <strong>Beijing Institute of Technology</strong>, where I also completed my B.S. My research asks a
+    simple question in a hard setting: <em>when a system generates an answer instead of returning a list
+    of documents, how do we know whether it was any good?</em> That leads me to
+    <strong>evaluation for generative retrieval</strong> and
+    <strong>research evaluation for scientific peer review</strong>.
+  </p>
+  <div class="intro-panel__links">
+    <a class="pub-link pub-link--primary" href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+    <a class="pub-link" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+    <a class="pub-link" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+    <a class="pub-link" href="{{ site.author.orcid }}" target="_blank" rel="noopener"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID</a>
+    <a class="pub-link" href="/cv/"><i class="fas fa-file-lines" aria-hidden="true"></i> CV</a>
+  </div>
+</div>
+
+## News
+
+<ul class="news-list">
+  <li class="news-item">
+    <span class="news-item__date">Jul 2026</span>
+    <span class="news-item__text">
+      <span class="news-item__tag news-item__tag--live">Published</span>
+      <em>G-CoS</em> appears in the <strong>SIGIR '26</strong> proceedings (pp. 4110–4115, Melbourne,
+      Australia) and is now live in the ACM Digital Library —
+      <a href="https://doi.org/10.1145/3805712.3809934" target="_blank" rel="noopener">10.1145/3805712.3809934</a>.
+    </span>
+  </li>
+  <li class="news-item">
+    <span class="news-item__date">Jun 2026</span>
+    <span class="news-item__text">
+      <span class="news-item__tag">Milestone</span>
+      Graduated with a B.S. in Computer Science &amp; Technology from Beijing Institute of Technology,
+      and staying at BIT to begin an M.S. in the same field (2026–2029).
+    </span>
+  </li>
+  <li class="news-item">
+    <span class="news-item__date">Apr 2026</span>
+    <span class="news-item__text">
+      <span class="news-item__tag">Accepted</span>
+      <em>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative
+      Information Retrieval</em> was accepted to the SIGIR 2026 short paper track.
+    </span>
+  </li>
+</ul>
+
+## Publications
+
+<div class="pub-list">
+  {% assign home_pubs = site.publications | sort: "date" | reverse %}
+  {% for post in home_pubs %}
+  <article class="pub-card">
+    <div class="pub-card__year">
+      <span>{{ post.date | date: "%Y" }}</span>
+      <span class="pub-card__month">{{ post.date | date: "%b" }}</span>
+    </div>
+    <div class="pub-card__body">
+      <h3 class="pub-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      {% if post.authors %}<p class="pub-card__authors">{{ post.authors }}</p>{% endif %}
+      <p class="pub-card__venue"><i class="fas fa-map-pin" aria-hidden="true"></i> {{ post.venue }}</p>
+      <div class="pub-detail__links">
+        {% if post.doi %}<a class="pub-link pub-link--primary" href="https://doi.org/{{ post.doi }}" target="_blank" rel="noopener"><i class="fas fa-book-open" aria-hidden="true"></i> DOI</a>{% endif %}
+        {% if post.codeurl %}<a class="pub-link" href="{{ post.codeurl }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% endif %}
+        <a class="pub-link" href="{{ post.url }}"><i class="fas fa-quote-right" aria-hidden="true"></i> Details &amp; BibTeX</a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
 
 ## Snapshot
 
@@ -20,8 +90,8 @@ redirect_from:
       <h3>Education</h3>
     </div>
     <ul>
-      <li><i class="fas fa-university icon" aria-hidden="true"></i><span>B.S. in Computer Science, Beijing Institute of Technology</span></li>
-      <li><i class="fas fa-calendar icon" aria-hidden="true"></i><span>Class of 2026 (Expected)</span></li>
+      <li><i class="fas fa-user-graduate icon" aria-hidden="true"></i><span>M.S. in Computer Science &amp; Technology, Beijing Institute of Technology (2026 – 2029)</span></li>
+      <li><i class="fas fa-university icon" aria-hidden="true"></i><span>B.S. in Computer Science &amp; Technology, Beijing Institute of Technology (2022 – 2026)</span></li>
       <li><i class="fas fa-map-marker-alt icon" aria-hidden="true"></i><span>Beijing, China</span></li>
     </ul>
   </div>
@@ -118,7 +188,7 @@ redirect_from:
   <div class="project-card">
     <div class="project-card__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
     <h3>G-CoS</h3>
-    <p>Interpretable gain-cost framework for user satisfaction estimation in generative information retrieval, accepted as a SIGIR 2026 short paper.</p>
+    <p>Interpretable gain-cost framework for user satisfaction estimation in generative information retrieval, published as a SIGIR 2026 short paper.</p>
     <div class="project-card__meta">
       <span>IR</span>
       <span>LLM</span>
@@ -126,7 +196,7 @@ redirect_from:
     </div>
     <div class="project-card__links">
       <a href="https://github.com/Academic-Hammer/G-CoS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="https://doi.org/10.1145/3805712.3809934" target="_blank"><i class="fas fa-book-open"></i> Paper (ACM DL)</a>
     </div>
   </div>
   <div class="project-card">

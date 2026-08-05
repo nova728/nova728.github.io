@@ -12,7 +12,7 @@ site_theme               : "modern" # Currently available options are "default",
 title                    : "Jia-Ling Shi"
 title_separator          : "-"
 name                     : &name "Jia-Ling Shi"
-description              : &description "Undergraduate Student | Computer Science | Beijing Institute of Technology"
+description              : &description "M.S. Student | Computer Science & Technology | Beijing Institute of Technology"
 url                      : https://nova728.github.io
 baseurl                  : ""
 repository               : "nova728/nova728.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "avatar.png"
   name             : "Jia-Ling Shi (史佳灵)"
   pronouns         : 
-  bio              : "Undergraduate Student at Beijing Institute of Technology"
+  bio              : "M.S. Student at Beijing Institute of Technology"
   location         : "Beijing, China"
   employer         : "Beijing Institute of Technology"
   uri              : 

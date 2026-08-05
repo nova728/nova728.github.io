@@ -11,17 +11,18 @@ redirect_from:
 
 <h1 class="fancy-title">Curriculum Vitae</h1>
 
-<div class="callout" style="margin-bottom:2rem;">
-  <p>
-    <i class="fas fa-file-pdf" aria-hidden="true"></i>
-    <a href="/files/cv.pdf" target="_blank">Download PDF version</a>
-    &nbsp;·&nbsp;
-    <i class="ai ai-google-scholar" aria-hidden="true"></i>
-    <a href="https://scholar.google.com/citations?user=TfOL5ucAAAAJ&hl=en" target="_blank">Google Scholar</a>
-    &nbsp;·&nbsp;
-    <i class="ai ai-orcid" aria-hidden="true"></i>
-    <a href="https://orcid.org/0009-0007-8384-7846" target="_blank">ORCID</a>
-  </p>
+<!-- The PDF chip only renders once files/cv.pdf actually exists, so the link can never 404. -->
+{% assign cv_pdf = site.static_files | where: "path", "/files/cv.pdf" | first %}
+
+<div class="callout callout--links">
+  <div class="pub-detail__links">
+    {% if cv_pdf %}
+    <a class="pub-link pub-link--primary" href="{{ base_path }}/files/cv.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download PDF</a>
+    {% endif %}
+    <a class="pub-link" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+    <a class="pub-link" href="{{ site.author.orcid }}" target="_blank" rel="noopener"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID</a>
+    <a class="pub-link" href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+  </div>
 </div>
 
 ## Education
@@ -29,12 +30,23 @@ redirect_from:
 <div class="info-grid">
   <div class="info-card">
     <div class="info-card__header">
+      <div class="info-card__icon"><i class="fas fa-user-graduate" aria-hidden="true"></i></div>
+      <h3>Beijing Institute of Technology</h3>
+    </div>
+    <ul>
+      <li><i class="fas fa-scroll icon" aria-hidden="true"></i><span>M.S. in Computer Science &amp; Technology</span></li>
+      <li><i class="fas fa-calendar icon" aria-hidden="true"></i><span>September 2026 – June 2029 (Expected)</span></li>
+      <li><i class="fas fa-map-marker-alt icon" aria-hidden="true"></i><span>Beijing, China</span></li>
+    </ul>
+  </div>
+  <div class="info-card">
+    <div class="info-card__header">
       <div class="info-card__icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
       <h3>Beijing Institute of Technology</h3>
     </div>
     <ul>
       <li><i class="fas fa-scroll icon" aria-hidden="true"></i><span>B.S. in Computer Science &amp; Technology</span></li>
-      <li><i class="fas fa-calendar icon" aria-hidden="true"></i><span>September 2022 – June 2026 (Expected)</span></li>
+      <li><i class="fas fa-calendar icon" aria-hidden="true"></i><span>September 2022 – June 2026</span></li>
       <li><i class="fas fa-map-marker-alt icon" aria-hidden="true"></i><span>Beijing, China</span></li>
     </ul>
   </div>
@@ -161,14 +173,21 @@ redirect_from:
 
 ## Publications
 
-<div class="info-grid">
-  <div class="info-card">
-    <div class="info-card__header">
-      <div class="info-card__icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
-      <h3>SIGIR 2026</h3>
+<div class="pub-list">
+  <article class="pub-card">
+    <div class="pub-card__year">
+      <span>2026</span>
+      <span class="pub-card__month">Jul</span>
     </div>
-    <p><strong>G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</strong></p>
-    <p>Accepted as a short paper at the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval.</p>
-    <p><a href="https://openreview.net/forum?id=K0wp4SqUag" target="_blank">View on OpenReview</a></p>
-  </div>
+    <div class="pub-card__body">
+      <h3 class="pub-card__title"><a href="/publication/g-cos-sigir-2026">G-CoS: An Interpretable Gain-Cost Framework for User Satisfaction Estimation in Generative Information Retrieval</a></h3>
+      <p class="pub-card__authors"><strong>Jia-Ling Shi</strong>, Zhijing Wu, Yidong Liang, Xian-Ling Mao</p>
+      <p class="pub-card__venue"><i class="fas fa-map-pin" aria-hidden="true"></i> Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR&nbsp;'26), Melbourne, Australia, pp. 4110–4115</p>
+      <div class="pub-detail__links">
+        <a class="pub-link pub-link--primary" href="https://doi.org/10.1145/3805712.3809934" target="_blank" rel="noopener"><i class="fas fa-book-open" aria-hidden="true"></i> DOI</a>
+        <a class="pub-link" href="https://github.com/Academic-Hammer/G-CoS" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a class="pub-link" href="/publication/g-cos-sigir-2026"><i class="fas fa-quote-right" aria-hidden="true"></i> Details &amp; BibTeX</a>
+      </div>
+    </div>
+  </article>
 </div>
